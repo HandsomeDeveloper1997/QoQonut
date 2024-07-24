@@ -1,0 +1,92 @@
+* 
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body 
+{
+    font-family: "Open Sans", sans-serif;
+    font-weight: lighter;
+
+}
+
+header
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(115, 214, 115);
+}
+
+header h1 
+{
+    letter-spacing: 8px;
+}
+
+.main--div
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin:0 auto;
+    gap:40px;
+}
+
+.prices--div
+{
+    width: 450px;
+    height: 300px;
+    border:3px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+
+.prices--div p 
+{
+    max-width: 270px;
+    font-size: 1.1em;
+}
+
+.fa-credit-card,.fa-face-smile,.fa-hands-bubbles,.fa-heart
+{
+    color:green;
+    font-size: 5em;
+}
+
+.tell
+{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 0.95em;
+}
+
+
+@media screen and (max-width:470px)
+{
+    .header--h1 {
+        font-size: 1.2em;
+    }
+
+    .main--div > div 
+    {
+        width: 280px;
+        height: 300px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+
+}
